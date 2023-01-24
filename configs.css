@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "p5Font";
+    src: url(fonts/p5hatty.ttf);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "p5Font";
+}
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.recentP1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.divHeader {
+    color: white;
+    height: 150px;
+    text-indent: 50px;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url("images/icon.png");
+    background-size: 160px;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+
+}
+
+.header {
+    text-align: center;
+}
+
+.iconHeader {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.backgroundLine {
+    background-image: url("images/line.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.inputText {
+    text-align: center;
+    padding-top: 70px;
+    height: 80px;
+}
+
+
+
+#inputName {
+    text-align: center;
+    font-size: 18pt;
+    height: 42px;
+    width: 150px;
+    border-radius: 15px;
+    font-family: 'p5Font';
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    font-size: 20;
+}
+
+#inputAsk {
+    text-align: center;
+    font-size: 18pt;
+    height: 42px;
+    width: 300px;
+    border-radius: 15px;
+    font-family: 'p5Font';
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    font-size: 20;
+
+}
+
+
+.buttonDiv {
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.a span {
+    position: relative;
+    z-index: 2;
+}
+
+.a:after {
+    border-radius: 15px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    transition: all .10s;
+}
+
+.a:hover {
+    color: black;
+}
+
+.a:hover:after {
+    width: 100%;
+}
+
+
+#comment {
+    padding-top: 40px;
+    color: white;
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+.phantom {
+    border-radius: 200px;
+    box-shadow: 10px 5px 5px black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.wrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: red;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.wrapper h2 {
+    margin-top: 0;
+    color: #333;
+
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper .content {
+    max-height: 100%;
+}
+
+.phantomDetail {
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.iconButton {
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 100px;
+    width: 110px;
+    cursor: pointer;
+    position: sticky;
+
+}
+
+
+.aTag span {
+    position: relative;
+    z-index: 1;
+}
+
+.aTag:after {
+    border-radius: 250px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    transition: all .10s;
+}
+
+
+
+.aTag:hover:after {
+    width: 100%;
+}
